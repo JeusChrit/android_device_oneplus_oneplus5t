@@ -20,6 +20,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    OnePlus5TFrameworks \
     OnePlus5TSystemUI
 
 $(call inherit-product, device/oneplus/oneplus5/oneplus5.mk)
