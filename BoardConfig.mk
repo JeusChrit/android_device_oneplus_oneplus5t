@@ -19,5 +19,8 @@ DEVICE_PATH := device/oneplus/oneplus5t
 # OTA
 TARGET_OTA_ASSERT_DEVICE := dumpling,OnePlus5T,oneplus5t
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus5t/BoardConfigVendor.mk
