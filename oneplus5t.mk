@@ -17,3 +17,7 @@ $(call inherit-product, device/oneplus/oneplus5/oneplus5.mk)
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus5t
+
+# Overlays
+PRODUCT_PACKAGES += \
+    OnePlus5TSystemUI
