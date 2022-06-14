@@ -52,6 +52,14 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/hw/fingerprint.goodix.so | vendor/lib64/hw/fingerprint.goodix.so)
+            sed -i "s|\x00goodix.fingerprint\x00|\x00fingerprint\x00\x00\x00\x00\x00\x00\x00\x00|" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper.
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

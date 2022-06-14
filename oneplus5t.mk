@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/oneplus/oneplus5/oneplus5.mk)
+$(call inherit-product, vendor/oneplus/oneplus5t/oneplus5t-vendor.mk)
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -21,3 +21,5 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OnePlus5TSystemUI
+
+$(call inherit-product, device/oneplus/oneplus5/oneplus5.mk)
