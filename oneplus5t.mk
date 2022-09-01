@@ -30,6 +30,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAOnePlus5TFrameworks \
     OnePlus5TFrameworks \
     OnePlus5TSystemUI
 
